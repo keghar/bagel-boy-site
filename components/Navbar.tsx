@@ -24,7 +24,7 @@ const handleNav = () => {
 
   return (
     <nav className={lilitaOne.className}>
-<div className="bg-sky-400">
+<div className="bg-[#a6c6da]">
         <div className={
             !nav ? (
                 'flex md:flex justify-center items-center w-full h-full px-5 pt-5') : ('flex flex-col justify-between items-center w-full h-screen')}>
