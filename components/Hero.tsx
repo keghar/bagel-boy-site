@@ -13,8 +13,8 @@ const Hero = () => {
   return (
     <div className={lilitaOne.className}>
     <div 
- className="h-screen w-screen bg-[url('/hero-bg2.jpg')] bg-center bg-fixed bg-no-repeat bg-[length:200%] md:bg-[length:150%] lg:bg-[length:100%]">
-  <div className="flex justify-center items-center bg-sky-500/20 h-screen w-screen pt-20">
+ className="h-screen w-screen bg-[url('/hero-bg2.jpg')] bg-center bg-fixed bg-no-repeat bg-[length:200%] md:bg-[length:150%] lg:bg-[length:100%] -z-1">
+  <div className="flex justify-center items-center bg-sky-500/20 h-screen w-screen">
 
   
         
