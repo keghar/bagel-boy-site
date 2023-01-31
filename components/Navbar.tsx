@@ -6,6 +6,8 @@ import Logo from '../public/bagel-boy-logo.png';
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai";
 import React, {useState} from 'react';
 import Link from "next/link";
+import NavMobileLinks from "./NavMobileLinks";
+import NavLinks from "./NavLinks";
 
 const lilitaOne = Lilita_One(
 {
@@ -23,43 +25,64 @@ const handleNav = () => {
 }
 
   return (
-    <nav className={lilitaOne.className}>
-<div className="bg-[#a6c6da]">
+    <nav className="absolute z-10 top 0 w-full">
+    <div className={lilitaOne.className}>
+<div className="bg-sky-300">
         <div className={
             !nav ? (
-                'flex md:flex justify-center items-center w-full h-full px-5 pt-5') : ('flex flex-col justify-between items-center w-full h-screen')}>
+                'flex md:flex justify-center items-center w-full h-full px-5 pt-5 ') : 
+                ('flex flex-col justify-between items-center w-full h-screen ')
+                
+                }>
                     
 
-                    {nav ? (
-                        <div className={lilitaOne.className}>
-                        <div className="flex items-center text-center text-white text-2xl mt-20 pt-20">
-                            <ul className="flex flex-col content-between gap-6">
-                                <li className="drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">ABOUT </li>
-                                <li className="drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">MENU</li>
-                                <li className="drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">CONTACT</li>
-                                <li className="drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">LOCATIONS</li>
-                            </ul>
+                    {nav ? ( <div onClick={handleNav}>
+                        <NavMobileLinks />
                         </div>
-                        </div>
+                        
                     ):('')}
 
 
             <div className="hidden md:flex justify-center">
+               
                 <ul className="flex justify-end text-white text-2xl">
-                    <li className="cursor-pointer drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] hover:scale-110 ease-in duration-300">ABOUT</li>
-                    <li className="mx-5 cursor-pointer drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] hover:scale-110 ease-in duration-300">MENU</li>
+                    
+                    <Link href='/#about'> 
+                    <li> 
+                    <NavLinks lable='About' /> 
+                    </li>
+                    </Link>
+                    
+                    <Link href='/'>
+                    <li className="ml-5"> 
+                    <NavLinks lable='Menu' /> 
+                    </li>
+                    </Link>
+
                 </ul>
             </div>
 
 
-            <div className={!nav ?("md:flex justify-items-center ") : ('')}>
-                 <Image src={Logo} alt='logo' height={'200'} />
+            <div className={!nav ?("md:flex justify-items-center ml-5") : ('')}>
+                <Link href='/'><Image src={Logo} alt='logo' height={'200'} /></Link>
             </div>
 
             <div className="hidden md:flex justify-center text-2xl mx-5">
-                <ul className="flex justify-start text-white ">
-                    <li className=" cursor-pointer drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] hover:scale-110 ease-in duration-300">CONTACT</li>
-                    <li className="ml-5 cursor-pointer drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] hover:scale-110 ease-in duration-300">LOCATIONS</li>
+
+                <ul className="flex justify-start text-white">
+
+                    <Link href={'/'}>
+                    <li>
+                    <NavLinks lable='contact'/> 
+                    </li>
+                    </Link>
+
+                    <Link href={'/'}>
+                    <li className="ml-5">
+                    <NavLinks lable='Locations' />
+                    </li>
+                    </Link>
+
                 </ul>
                 
             </div>
@@ -73,6 +96,7 @@ const handleNav = () => {
             </div> 
 
             </div>
+             </div>
              </div>
              
 
