@@ -5,7 +5,7 @@ import { AiFillMail, AiFillPhone } from "react-icons/ai";
 
 function Footer() {
   return (
-    <div className="bg-[#a6c3da] w-screen flex flex-col">
+    <div id="footer" className="bg-[#a6c3da] w-screen flex flex-col">
       <div className="flex flex-col md:flex-row justify-around pt-4 m-4">
         <div className="flex flex-col items-center p-4 rounded-xl bg-gray-200/30 w-full md:m-none md:w-[30%] h-full">
           <p className="text-sm"> Hours:</p>
