@@ -1,14 +1,18 @@
 import Image from "next/image";
 import FoleyClockTower from "../../public/foley_clock.jpeg";
+import Hero from "@/components/Hero";
+import About from "@/components/About";
 
 export default function Foley() {
   return (
-    <div className="h-screen w-screen flex top-[50vh]">
-      <Image
-        className="object-cover object-bottom"
-        alt="Foley clock tower"
-        src={FoleyClockTower}
+    <>
+      <Hero
+        herotext="Bagel Boy Foley,
+              AL"
+        heroimg={FoleyClockTower}
+        heroalt="Clock tower Foley, AL"
       />
-    </div>
+      <About abouttext="   We are located in foley al" />
+    </>
   );
 }

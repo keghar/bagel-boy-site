@@ -4,13 +4,14 @@ import LinkToMenuSection from "./LinkToMenuSection";
 import { Lilita_One } from "@next/font/google";
 import AboutPhoto from "../public/about-img.jpg";
 import Image from "next/image";
+import ButtonLink from "./ButtonLink";
 
 const lilitaOne = Lilita_One({
   subsets: ["latin"],
   weight: "400",
 });
 
-function About() {
+function About({ abouttext }: any) {
   return (
     <div className={lilitaOne.className}>
       <div id="about" className="h-[100vh] bg-gray-200 p-4 md:p-8">
@@ -26,26 +27,29 @@ function About() {
           <div className="flex flex-col items-center justify-center h-full flex-[0_1_50%]">
             <div className=" p-4 rounded-xl shadow-xl shadow-gray-400">
               <p className="text-2xl md:text-4xl text-gray-600 text-center tracking-wider uppercase">
-                Quick about section about the resturant and what you offer. Two
-                sentences max will do.
+                {abouttext}
               </p>
             </div>
 
             <div className="mt-5">
-              <div className="w-full bg-[#ec5558] rounded-2xl shadow-lg shadow-gray-800 cursor-pointer hover:scale-110 ease-in duration-300 px-4 py-2">
-                <span className="text-gray-200 uppercase drop-shadow-[2px_2px_2px_black] p-4 tracking-wide">
-                  Learn More
-                </span>
-              </div>
+              <ButtonLink name="learn more"></ButtonLink>
             </div>
           </div>
         </div>
       </div>
-      <div>
+      {/* <div>
         <Carousel />
-      </div>
+      </div> */}
     </div>
   );
 }
 
 export default About;
+
+{
+  /* <div className="w-full bg-[#ec5558] rounded-2xl shadow-lg shadow-gray-800 cursor-pointer hover:scale-110 ease-in duration-300 px-4 py-2">
+<span className="text-gray-200 uppercase drop-shadow-[2px_2px_2px_black] p-4 tracking-wide">
+  Learn More
+</span>
+</div> */
+}

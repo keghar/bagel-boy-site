@@ -1,6 +1,7 @@
 import { Lilita_One } from "@next/font/google";
 import Image from "next/image";
 import HeroImg from "../public/hero-img.jpeg";
+import ButtonLink from "./ButtonLink";
 
 const lilitaOne = Lilita_One({
   subsets: ["latin"],
@@ -19,11 +20,7 @@ function LinkToMenuSection() {
         </div>
 
         <div className="mt-5">
-          <div className="bg-[#ec5558] rounded-2xl shadow-lg shadow-gray-800 cursor-pointer hover:scale-110 ease-in duration-300 px-4 py-2">
-            <span className="text-gray-200 uppercase drop-shadow-[2px_2px_2px_black] p-4 tracking-wide">
-              Menu
-            </span>
-          </div>
+          <ButtonLink name="Menu"></ButtonLink>
         </div>
       </div>
     </div>
@@ -31,3 +28,9 @@ function LinkToMenuSection() {
 }
 
 export default LinkToMenuSection;
+
+//   <div className="bg-[#ec5558] rounded-2xl shadow-lg shadow-gray-800 cursor-pointer hover:scale-110 ease-in duration-300 px-4 py-2">
+// <span className="text-gray-200 uppercase drop-shadow-[2px_2px_2px_black] p-4 tracking-wide">
+// Menu
+// </span>
+// </div>

@@ -120,7 +120,9 @@ function Navbar() {
                       <Link href="foley">
                         <NavLinks lable="foley" />
                       </Link>
-                      <NavLinks lable="partners" />
+                      <Link href="/">
+                        <NavLinks lable="partners" />
+                      </Link>
                     </div>
                   ) : (
                     "   "
