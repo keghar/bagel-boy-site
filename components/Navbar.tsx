@@ -41,12 +41,12 @@ function Navbar() {
               <div>
                 <div className="flex items-center text-center text-white text-2xl mt-20 pt-20">
                   <ul className="flex flex-col content-between gap-6">
-                    <Link href="#about">
+                    <Link href="about">
                       <li onClick={handleNav}>
                         <NavLinks lable="About" />
                       </li>
                     </Link>
-                    <Link href="#about">
+                    <Link href="/">
                       <li onClick={handleNav}>
                         <NavLinks lable="Menu" />
                       </li>
@@ -85,7 +85,7 @@ function Navbar() {
 
             <div className="hidden md:flex justify-center md:flex-[0_1_30%]">
               <ul className="flex space-x-3 text-white text-xl lg:text-2xl">
-                <Link href="/#about">
+                <Link href="about">
                   <li className="">
                     <NavLinks lable="About" />
                   </li>

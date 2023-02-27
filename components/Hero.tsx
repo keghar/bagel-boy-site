@@ -2,6 +2,7 @@ import { Lilita_One } from "@next/font/google";
 import Image from "next/image";
 import HeroImg from "../public/hero-bg2.jpg";
 import ButtonLink from "./ButtonLink";
+import Link from "next/link";
 
 const lilitaOne = Lilita_One({
   subsets: ["latin"],
@@ -23,7 +24,9 @@ const Hero = ({ heroimg, herotext, heroalt }: any) => {
             </h1>
           </div>
 
-          <ButtonLink name="Order Online" />
+          <Link href="https://www.doordash.com/store/bagel-boy-foley-24386687">
+            <ButtonLink name="Order Online" />
+          </Link>
         </div>
       </div>
     </div>

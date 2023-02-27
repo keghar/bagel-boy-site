@@ -5,6 +5,7 @@ import { Lilita_One } from "@next/font/google";
 import AboutPhoto from "../public/about-img.jpg";
 import Image from "next/image";
 import ButtonLink from "./ButtonLink";
+import Link from "next/link";
 
 const lilitaOne = Lilita_One({
   subsets: ["latin"],
@@ -32,14 +33,14 @@ function About({ abouttext }: any) {
             </div>
 
             <div className="mt-5">
-              <ButtonLink name="learn more"></ButtonLink>
+              <Link href="about">
+                <ButtonLink name="learn more"></ButtonLink>
+              </Link>
             </div>
           </div>
         </div>
       </div>
-      {/* <div>
-        <Carousel />
-      </div> */}
+      <div></div>
     </div>
   );
 }

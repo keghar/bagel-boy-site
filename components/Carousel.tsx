@@ -3,20 +3,21 @@
 import React, { useState } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import Image from "next/image";
+import ImgOne from "../public/carouselImgs/photo1.jpg";
 
 const Carousel = () => {
   const slides = [
     {
-      src: "/carouselImgs/photo1.jpg",
+      src: "carouselImgs/photo1.jpg",
     },
     {
       src: "/carouselImgs/photo2.jpg",
     },
     {
-      src: "/carouselImgs/photo1.jpg",
+      src: "/carouselImgs/photo3.jpg",
     },
     {
-      src: "/carouselImgs/photo2.jpg",
+      src: "/carouselImgs/photo4.jpg",
     },
     {
       src: "/carouselImgs/photo1.jpg",
@@ -41,8 +42,9 @@ const Carousel = () => {
   };
 
   // style={{ backgroundImage: `url(${slides[2].src})` }}
+  //
   return (
-    <div className="bg-gray-200 w-screen h-[50vh] md:h-[70vh]">
+    <div className="bg-gray-200 w-screen h-[50vh] md:h-[70vh] lg:h-[80vh] -z-50">
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].src})` }}
         className="w-full h-full bg-center bg-cover bg-no-repeat md:bg-cover md:bg-fixed bg duration-500 md:w-full ">
@@ -52,20 +54,15 @@ const Carousel = () => {
             <BsChevronCompactLeft onClick={prevSlide} size={30} />
           </div>
 
-          {/* Images
-          <div className="">
+          {/* <div className="h-screen w-screen">
             <Image
-              src={slides[1].src}
+              src={slides[currentIndex].src}
               alt="logo"
-              width={0}
-              height={0}
               sizes="100vw"
-              className="w-auto h-full -z-50"
+              className="w-screen"
             />
           </div> */}
-
           {/* right arrow */}
-
           <div className="text-2xl text-gray-200 rounded-full p-2 bg-white/20 cursor-pointer">
             <BsChevronCompactRight onClick={nextSlide} size={30} />
           </div>
