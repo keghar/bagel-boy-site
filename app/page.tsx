@@ -9,6 +9,7 @@ import InTheNews from "@/components/InTheNews";
 import Footer from "@/components/Footer";
 import HeroImg from "../public/hero-bg2.jpg";
 import Carousel from "@/components/Carousel";
+import AboutPhoto from "@/public/about-img.jpg";
 
 export default function Home() {
   return (
@@ -21,6 +22,8 @@ export default function Home() {
       <About
         abouttext="   Quick about section about the resturant and what you offer. Two
       sentences max will do."
+        aboutimg={AboutPhoto}
+        aboutalt="Owner holding tray of masive bagels bagels"
       />
       <Carousel />
 

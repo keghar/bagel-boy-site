@@ -3,6 +3,7 @@ import FooterLogo from "../public/footerlogo.png";
 import { SiFacebook, SiInstagram } from "react-icons/si";
 import { AiFillMail, AiFillPhone } from "react-icons/ai";
 import { Lilita_One } from "@next/font/google";
+import Link from "next/link";
 
 const lilitaOne = Lilita_One({
   subsets: ["latin"],
@@ -30,30 +31,40 @@ function Footer() {
           </div>
 
           <div className="flex flex-col rounded-xl bg-[#a6c3da] p-4 w-full md:w-[30%] h-full md:mt-none md:order-last md:-mb-4 space-y-4">
-            <div>
-              <p className="text-center text-sm md:text-md lg:text-lg">
-                Social Links
-              </p>
+            <span className="text-center text-md md:text-lg lg:text-xl">
+              Social Links
+            </span>
 
-              <div className="flex justify-center space-x-4">
-                <SiFacebook />
+            <div className="flex justify-center space-x-4">
+              <Link href="https://www.facebook.com/bagelboyfoley">
+                <SiFacebook className="text-xl" />
+              </Link>
 
-                <SiInstagram />
-              </div>
+              <Link href="https://www.instagram.com/bagelboyfoley">
+                <SiInstagram className="text-xl" />
+              </Link>
             </div>
 
-            <div>
+            <div className="">
               <hr className="bg-gray-600 h-1" />
             </div>
             <div>
-              <p className="text-center">Contact:</p>
-              <div className="flex flex-col items-center">
+              <p className="text-center text-md md:text-lg lg:text-xl">
+                Contact:
+              </p>
+              <div className="flex items-center justify-center">
                 <AiFillMail />
-                <span>bagelboyfoley@gmail.com</span>
+                <Link href="mailto:bagelboyfoley@gmail.com">
+                  <span>- bagelboyfoley@gmail.com</span>
+                </Link>
               </div>
-              <div className="flex flex-col items-center">
+              <div className="flex items-center justify-center space-y-1">
                 <AiFillPhone />
-                <span>251-555-5555</span>
+                <Link href="tel:251-555-5555">
+                  <span className=" text-sm md:text-md lg:text-lg">
+                    - 251-555-5555
+                  </span>
+                </Link>
               </div>
             </div>
           </div>

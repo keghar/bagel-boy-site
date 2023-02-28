@@ -12,7 +12,7 @@ const lilitaOne = Lilita_One({
   weight: "400",
 });
 
-function About({ abouttext }: any) {
+function About({ abouttext, aboutimg, aboutalt }: any) {
   return (
     <div className={lilitaOne.className}>
       <div id="about" className="h-[100vh] bg-gray-200 p-4 md:p-8">
@@ -20,8 +20,8 @@ function About({ abouttext }: any) {
           <div className="relative h-full w-full flex-[0_1_50%]">
             <Image
               className="rounded-xl object-contain"
-              src={AboutPhoto}
-              alt="Owner holding trey of bagels"
+              src={aboutimg}
+              alt={aboutalt}
               fill
             />
           </div>

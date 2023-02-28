@@ -8,6 +8,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import NavMobileLinks from "./NavMobileLinks";
 import NavLinks from "./NavLinks";
+import { SiFacebook, SiInstagram } from "react-icons/si";
 
 const lilitaOne = Lilita_One({
   subsets: ["latin"],
@@ -76,6 +77,17 @@ function Navbar() {
                         ""
                       )}
                     </li>
+                    <li>
+                      <div className="flex justify-center space-x-4">
+                        <Link href="https://www.facebook.com/bagelboyfoley">
+                          <SiFacebook className="text-xl" />
+                        </Link>
+
+                        <Link href="https://www.instagram.com/bagelboyfoley">
+                          <SiInstagram className="text-xl" />
+                        </Link>
+                      </div>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -129,6 +141,7 @@ function Navbar() {
                   )}
                 </li>
               </ul>
+              <div></div>
             </div>
 
             <div

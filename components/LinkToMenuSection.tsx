@@ -2,6 +2,7 @@ import { Lilita_One } from "@next/font/google";
 import Image from "next/image";
 import HeroImg from "../public/hero-img.jpeg";
 import ButtonLink from "./ButtonLink";
+import Link from "next/link";
 
 const lilitaOne = Lilita_One({
   subsets: ["latin"],
@@ -20,7 +21,9 @@ function LinkToMenuSection() {
         </div>
 
         <div className="mt-5">
-          <ButtonLink name="Menu"></ButtonLink>
+          <Link href="menu">
+            <ButtonLink name="Menu"></ButtonLink>
+          </Link>
         </div>
       </div>
     </div>
