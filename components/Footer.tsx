@@ -15,11 +15,11 @@ function Footer() {
     <footer className={lilitaOne.className}>
       <div
         id="footer"
-        className="bg-gray-600 w-screen overscroll-none flex text-gray-600">
+        className="bg-gray-500 w-screen overscroll-none flex text-gray-600">
         <div className="flex flex-col md:flex-row justify-between items-between pt-4 m-4 space-y-4 md:space-y-0">
           <div className="flex flex-col items-center justify-center p-4 rounded-xl bg-[#a6c3da] w-full md:m-none md:w-[30%] h-full">
-            <span className="text-sm md:text-md lg:text-lg"> Hours:</span>
-            <ul className="text-xs md:text-sm lg:text-md">
+            <span className="text-md md:text-lg lg:text-xl"> Hours:</span>
+            <ul className="text-sm md:text-md lg:text-lg">
               <li>Monday 6am to 2pm</li>
               <li>Tuesday Closed</li>
               <li>Wednesday Closed</li>
@@ -30,7 +30,7 @@ function Footer() {
             </ul>
           </div>
 
-          <div className="flex flex-col rounded-xl bg-[#a6c3da] p-4 w-full md:w-[30%] h-full md:mt-none md:order-last md:-mb-4 space-y-4">
+          <div className="flex flex-col justify-center items-center rounded-xl bg-[#a6c3da] p-4 w-full md:w-[30%] h-full md:mt-none md:order-last md:-mb-4 space-y-4">
             <span className="text-center text-md md:text-lg lg:text-xl">
               Social Links
             </span>
@@ -55,15 +55,15 @@ function Footer() {
               <div className="flex items-center justify-center">
                 <AiFillMail />
                 <Link href="mailto:bagelboyfoley@gmail.com">
-                  <span>- bagelboyfoley@gmail.com</span>
+                  <span className=" text-sm lg:text-lg">
+                    - bagelboyfoley@gmail.com
+                  </span>
                 </Link>
               </div>
               <div className="flex items-center justify-center space-y-1">
                 <AiFillPhone />
                 <Link href="tel:251-555-5555">
-                  <span className=" text-sm md:text-md lg:text-lg">
-                    - 251-555-5555
-                  </span>
+                  <span className=" text-sm lg:text-lg">- 251-555-5555</span>
                 </Link>
               </div>
             </div>

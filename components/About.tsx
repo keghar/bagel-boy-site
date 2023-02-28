@@ -19,7 +19,7 @@ function About({ abouttext, aboutimg, aboutalt }: any) {
         <div className="flex flex-col h-full justify-center items-center">
           <div className="relative h-full w-full flex-[0_1_50%]">
             <Image
-              className="rounded-xl object-contain"
+              className="rounded-xl object-contain "
               src={aboutimg}
               alt={aboutalt}
               fill
@@ -27,7 +27,7 @@ function About({ abouttext, aboutimg, aboutalt }: any) {
           </div>
           <div className="flex flex-col items-center justify-center h-full flex-[0_1_50%]">
             <div className=" p-4 rounded-xl shadow-xl shadow-gray-400">
-              <p className="text-2xl md:text-4xl text-gray-600 text-center tracking-wider uppercase">
+              <p className="text-2xl md:text-4xl text-gray-600 text-center tracking-wider uppercase ">
                 {abouttext}
               </p>
             </div>
