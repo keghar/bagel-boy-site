@@ -23,10 +23,15 @@ const Hero = ({ heroimg, herotext, heroalt }: any) => {
               {herotext}
             </h1>
           </div>
+          <div className="flex space-x-5">
+            <Link href="https://www.tableneeds.net/restaurants/bagelboy/bagelboy/order/menu">
+              <ButtonLink name="Order Online" />
+            </Link>
 
-          <Link href="https://www.doordash.com/store/bagel-boy-foley-24386687">
-            <ButtonLink name="Order Online" />
-          </Link>
+            <Link href="https://www.doordash.com/store/bagel-boy-foley-24386687">
+              <ButtonLink name="Delivery" />
+            </Link>
+          </div>
         </div>
       </div>
     </div>

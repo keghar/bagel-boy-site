@@ -1,5 +1,5 @@
 import Image from "next/image";
-import FooterLogo from "../public/footerlogo.png";
+import FooterLogo from "../public/footerlogo2.png";
 import { SiFacebook, SiInstagram } from "react-icons/si";
 import { AiFillMail, AiFillPhone } from "react-icons/ai";
 import { Lilita_One } from "@next/font/google";
@@ -15,10 +15,12 @@ function Footer() {
     <footer className={lilitaOne.className}>
       <div
         id="footer"
-        className="bg-gray-500 w-screen overscroll-none flex text-gray-600">
+        className="bg-[#fac113] w-screen overscroll-none flex text-gray-600">
         <div className="flex flex-col md:flex-row justify-between items-between pt-4 m-4 space-y-4 md:space-y-0">
-          <div className="flex flex-col items-center justify-center p-4 rounded-xl bg-[#a6c3da] w-full md:m-none md:w-[30%] h-full">
-            <span className="text-md md:text-lg lg:text-xl"> Hours:</span>
+          <div className="flex flex-col items-center justify-center p-4 rounded-xl bg-[#77c1e5] w-full md:m-none md:w-[30%] h-full">
+            <span className="text-md md:text-lg lg:text-xl uppercase">
+              Hours:
+            </span>
             <ul className="text-sm md:text-md lg:text-lg">
               <li>Monday 6am to 2pm</li>
               <li>Tuesday Closed</li>
@@ -30,8 +32,8 @@ function Footer() {
             </ul>
           </div>
 
-          <div className="flex flex-col justify-center items-center rounded-xl bg-[#a6c3da] p-4 w-full md:w-[30%] h-full md:mt-none md:order-last md:-mb-4 space-y-4">
-            <span className="text-center text-md md:text-lg lg:text-xl">
+          <div className="flex flex-col justify-center items-center rounded-xl bg-[#77c1e5] p-4 w-full md:w-[30%] h-full md:mt-none md:order-last md:-mb-4 space-y-4">
+            <span className="text-center text-md md:text-lg lg:text-xl uppercase">
               Social Links
             </span>
 
@@ -49,7 +51,7 @@ function Footer() {
               <hr className="bg-gray-600 h-1" />
             </div>
             <div>
-              <p className="text-center text-md md:text-lg lg:text-xl">
+              <p className="text-center text-md md:text-lg lg:text-xl uppercase">
                 Contact:
               </p>
               <div className="flex items-center justify-center">

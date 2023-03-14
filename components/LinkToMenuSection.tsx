@@ -21,7 +21,7 @@ function LinkToMenuSection() {
         </div>
 
         <div className="mt-5">
-          <Link href="menu">
+          <Link href="https://www.tableneeds.net/restaurants/bagelboy/bagelboy/order/www.tableneeds.net">
             <ButtonLink name="Menu"></ButtonLink>
           </Link>
         </div>

@@ -47,7 +47,7 @@ function Navbar() {
                         <NavLinks lable="About" />
                       </li>
                     </Link>
-                    <Link href="/">
+                    <Link href="https://www.tableneeds.net/restaurants/bagelboy/bagelboy/order/www.tableneeds.net">
                       <li onClick={handleNav}>
                         <NavLinks lable="Menu" />
                       </li>
@@ -67,7 +67,7 @@ function Navbar() {
                               <NavLinks lable="foley" />
                             </div>
                           </Link>
-                          <Link href="/">
+                          <Link href="partners">
                             <div onClick={handleNav}>
                               <NavLinks lable="partners" />
                             </div>
@@ -103,7 +103,7 @@ function Navbar() {
                   </li>
                 </Link>
 
-                <Link href="/">
+                <Link href="https://www.tableneeds.net/restaurants/bagelboy/bagelboy/order/www.tableneeds.net">
                   <li className="">
                     <NavLinks lable="Menu" />
                   </li>
@@ -132,7 +132,7 @@ function Navbar() {
                       <Link href="foley">
                         <NavLinks lable="foley" />
                       </Link>
-                      <Link href="/">
+                      <Link href="partners">
                         <NavLinks lable="partners" />
                       </Link>
                     </div>
