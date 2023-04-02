@@ -10,6 +10,7 @@ import Footer from "@/components/Footer";
 import HeroImg from "../public/hero-bg2.jpg";
 import Carousel from "@/components/Carousel";
 import AboutPhoto from "@/public/about-img.jpg";
+import BackToTop from "@/components/BackToTop";
 
 export default function Home() {
   return (
@@ -31,6 +32,9 @@ export default function Home() {
       <Signup />
       <InTheNews />
       <Footer />
+      <div className="sm:hidden md:block">
+        <BackToTop />
+      </div>
     </>
   );
 }
