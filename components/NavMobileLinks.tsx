@@ -45,6 +45,10 @@ function NavMobileLinks() {
                   <NavLinks lable="foley" />
                 </Link>
                 <Link href="/">
+                  <NavLinks lable="gulf shores" />
+                </Link>
+
+                <Link href="/">
                   <NavLinks lable="partners" />
                 </Link>
               </div>

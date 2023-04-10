@@ -61,17 +61,24 @@ function Navbar() {
                     <li onClick={handleDropdown}>
                       <NavLinks lable="Locations" />
                       {open ? (
-                        <div>
-                          <Link href="foley">
-                            <div onClick={handleNav}>
-                              <NavLinks lable="foley" />
-                            </div>
-                          </Link>
-                          <Link href="partners">
-                            <div onClick={handleNav}>
-                              <NavLinks lable="partners" />
-                            </div>
-                          </Link>
+                        <div className="text-lg">
+                          <div>
+                            <Link href="foley">
+                              <div onClick={handleNav}>
+                                <NavLinks lable="foley" />
+                              </div>
+                            </Link>
+                            <Link href="gulfshores">
+                              <div onClick={handleNav}>
+                                <NavLinks lable="gulf shores" />
+                              </div>
+                            </Link>
+                            <Link href="partners">
+                              <div onClick={handleNav}>
+                                <NavLinks lable="partners" />
+                              </div>
+                            </Link>
+                          </div>
                         </div>
                       ) : (
                         ""
@@ -120,7 +127,7 @@ function Navbar() {
             <div className="hidden md:flex-[0_1_30%] md:flex justify-center text-xl lg:text-2xl ">
               <ul className="flex space-x-3 pr-3 text-white">
                 <Link href={"/"}>
-                  <li>
+                  <li className="">
                     <NavLinks lable="contact" />
                   </li>
                 </Link>
@@ -128,10 +135,14 @@ function Navbar() {
                 <li onClick={handleDropdown}>
                   <NavLinks lable="Locations" />
                   {open ? (
-                    <div className="fixed text-center">
+                    <div className="absolute flex flex-col bg-sky-300 text-base">
                       <Link href="foley">
                         <NavLinks lable="foley" />
                       </Link>
+                      <Link href="gulfshores">
+                        <NavLinks lable="gulf shores" />
+                      </Link>
+
                       <Link href="partners">
                         <NavLinks lable="partners" />
                       </Link>
