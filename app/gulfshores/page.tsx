@@ -2,7 +2,7 @@ import Image from "next/image";
 import HeroImg from "../../public/gs-hero-img.jpg";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
-import AboutPhoto from "../../public/gs-about-img.jpg";
+import AboutPhoto from "../../public/gs-about-img.jpeg";
 import Footer from "@/components/Footer";
 
 export default function Foley() {
