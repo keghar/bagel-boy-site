@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Lilita_One } from "@next/font/google";
+
 import Logo from "../public/bagel-boy-logo.png";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import React, { useState } from "react";
@@ -9,11 +9,6 @@ import Link from "next/link";
 import NavMobileLinks from "./NavMobileLinks";
 import NavLinks from "./NavLinks";
 import { SiFacebook, SiInstagram } from "react-icons/si";
-
-const lilitaOne = Lilita_One({
-  subsets: ["latin"],
-  weight: "400",
-});
 
 function Navbar() {
   const [open, closed] = useState(false);
@@ -30,7 +25,7 @@ function Navbar() {
 
   return (
     <nav className="absolute w-full">
-      <div className={lilitaOne.className}>
+      <div>
         <div className="bg-sky-300">
           <div
             className={

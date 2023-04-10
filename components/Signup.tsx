@@ -1,13 +1,6 @@
-import { Lilita_One } from "@next/font/google";
-
-const lilitaOne = Lilita_One({
-  subsets: ["latin"],
-  weight: "400",
-});
-
 function Signup() {
   return (
-    <div className={lilitaOne.className}>
+    <div>
       <div className=" bg-gray-200 p-4 w-full h-[50vh] md:h-[30vh]">
         <div className="flex h-full flex-col justify-center items-center m-2">
           <p className="text-center text-xl text-gray-500 tracking-wider uppercase md:text2xl">

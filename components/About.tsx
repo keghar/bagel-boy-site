@@ -1,20 +1,15 @@
 "use client";
 import Carousel from "./Carousel";
 import LinkToMenuSection from "./LinkToMenuSection";
-import { Lilita_One } from "@next/font/google";
+
 import AboutPhoto from "../public/about-img.jpg";
 import Image from "next/image";
 import ButtonLink from "./ButtonLink";
 import Link from "next/link";
 
-const lilitaOne = Lilita_One({
-  subsets: ["latin"],
-  weight: "400",
-});
-
 function About({ abouttext, aboutimg, aboutalt }: any) {
   return (
-    <div className={lilitaOne.className}>
+    <div>
       <div id="about" className="h-[100vh] bg-gray-200 p-4 md:p-8">
         <div className="flex flex-col h-full justify-center items-center">
           <div className="relative h-full w-full flex-[0_1_50%]">

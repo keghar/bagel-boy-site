@@ -1,18 +1,12 @@
-import { Lilita_One } from "@next/font/google";
 import Image from "next/image";
 import HeroImg from "../public/hero-bg2.jpg";
 import ButtonLink from "./ButtonLink";
 import Link from "next/link";
 
-const lilitaOne = Lilita_One({
-  subsets: ["latin"],
-  weight: "400",
-});
-
 const Hero = ({ heroimg, herotext, heroalt }: any) => {
   console.log(heroimg);
   return (
-    <div className={lilitaOne.className}>
+    <div>
       <div className="h-full w-screen">
         <div className="h-screen w-[200%] left-[-50%] fixed -z-50 md:w-[150%] md:left-[-25%] lg:bottom-[40%] lg:left-0 lg:w-full">
           <Image className="" alt={heroalt} src={heroimg} />

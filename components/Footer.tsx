@@ -2,17 +2,12 @@ import Image from "next/image";
 import FooterLogo from "../public/footerlogo2.png";
 import { SiFacebook, SiInstagram } from "react-icons/si";
 import { AiFillMail, AiFillPhone } from "react-icons/ai";
-import { Lilita_One } from "@next/font/google";
-import Link from "next/link";
 
-const lilitaOne = Lilita_One({
-  subsets: ["latin"],
-  weight: "400",
-});
+import Link from "next/link";
 
 function Footer() {
   return (
-    <footer className={lilitaOne.className}>
+    <footer>
       <div
         id="footer"
         className="bg-[#fac113] w-screen overscroll-none flex text-gray-600">

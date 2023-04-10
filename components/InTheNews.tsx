@@ -2,18 +2,13 @@ import Image from "next/image";
 import FoxNews from "../public/fox10logo.png";
 import BestBaldwin from "../public/bestofbaldwin.jpeg";
 import GulfMedia from "../public/gulfMedia.jpg";
-import { Lilita_One } from "@next/font/google";
+
 import StudioTen from "../public/studio10.png";
 import Link from "next/link";
 
-const lilitaOne = Lilita_One({
-  subsets: ["latin"],
-  weight: "400",
-});
-
 function InTheNews() {
   return (
-    <section className={lilitaOne.className}>
+    <section>
       <div className="h-full bg-gray-200 flex flex-col items-center p-4">
         <h3 className="text-gray-500 text-center text-xl mb-4">In The News</h3>
         <div className="flex flex-col items-center space-y-4">

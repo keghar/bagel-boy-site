@@ -1,17 +1,11 @@
-import { Lilita_One } from "@next/font/google";
 import Image from "next/image";
 import HeroImg from "../public/hero-img.jpeg";
 import ButtonLink from "./ButtonLink";
 import Link from "next/link";
 
-const lilitaOne = Lilita_One({
-  subsets: ["latin"],
-  weight: "400",
-});
-
 function LinkToMenuSection() {
   return (
-    <div className={lilitaOne.className}>
+    <div>
       <div className="bg-[#f4bc22] h-[50vh] md:h-[30vh] w-full flex flex-col justify-center items-center shadow-xl shadow-gray-400 p-10">
         <div>
           <h2 className="text-gray-600 text-center text-2xl tracking-widest uppercase md:text-3xl lg:text-4xl">
