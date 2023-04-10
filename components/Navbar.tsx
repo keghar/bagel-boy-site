@@ -134,6 +134,7 @@ function Navbar() {
 
                 <li onClick={handleDropdown}>
                   <NavLinks lable="Locations" />
+
                   {open ? (
                     <div className="absolute flex flex-col bg-sky-300 text-base">
                       <Link href="foley">
