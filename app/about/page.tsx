@@ -13,7 +13,7 @@ function AboutPage() {
       <div className="h-[35vh]"> </div>
       <About
         aboutimg={AboutPhoto}
-        abouttext="This is what we are about. We saw a need for handrolled fresh bagels in our local area. We opened in 2022 to provide delicous bagels in Foley, AL. Stop in to try our bagels and sandwhiches and iced coffee. "
+        abouttext="Bagel Boy was born out of necessity and the love of baking. Plus we really missed having access to hot fresh bagels like they have in other cities! We saw a hole in the market and filled it with schmear."
       />
       <Carousel />
       <LinkToMenuSection />

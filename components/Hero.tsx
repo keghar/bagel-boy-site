@@ -4,11 +4,10 @@ import ButtonLink from "./ButtonLink";
 import Link from "next/link";
 
 const Hero = ({ heroimg, herotext, heroalt }: any) => {
-  console.log(heroimg);
   return (
     <div>
       <div className="h-full w-screen">
-        <div className="h-screen w-[200%] left-[-50%] fixed -z-50 md:w-[150%] md:left-[-25%] lg:bottom-[40%] lg:left-0 lg:w-full">
+        <div className="h-screen w-[200%] left-[-50%] fixed -z-50 md:w-[150%] md:left-[-25%] lg:bottom-[10%] lg:left-[-25%] lg:w-[150%] xl:left-0 xl:w-full xl:bottom-[15%]">
           <Image className="" alt={heroalt} src={heroimg} />
         </div>
         <div className="flex flex-col justify-center items-center bg-sky-500/20 h-screen w-screen">
@@ -17,7 +16,20 @@ const Hero = ({ heroimg, herotext, heroalt }: any) => {
               {herotext}
             </h1>
           </div>
-          <div className="flex space-x-5">
+          <div className=" flex space-x-5 pb-10  text-gray-200 drop-shadow-[2px_2px_2px_black] uppercase text-center text-lg md:text-xl">
+            <div className="space-x-5 cursor-pointer">
+              <Link href="foley">
+                <span>Foley, AL</span>
+              </Link>
+              <Link href="gulfshores">
+                <span>Gulf Shores, AL</span>
+              </Link>
+              <Link href="partners">
+                <span>partners</span>
+              </Link>
+            </div>
+          </div>
+          <div className="flex space-x-10">
             <Link href="https://www.tableneeds.net/restaurants/bagelboy/bagelboy/order/menu">
               <ButtonLink name="Order Online" />
             </Link>

@@ -15,13 +15,11 @@ export default function Home() {
   return (
     <>
       <Hero
-        herotext="   Hand rolled, east coast style bagels with southern charm in Foley,
-              AL"
+        herotext="   Hand rolled, east coast style bagels with southern charm"
         heroimg={HeroImg}
       />
       <About
-        abouttext="   Quick about section about the resturant and what you offer. Two
-      sentences max will do."
+        abouttext="At Bagel Boy, our hole goal is to unite community and culture through food and collaboration."
         aboutimg={AboutPhoto}
         aboutalt="Owner holding tray of masive bagels bagels"
       />

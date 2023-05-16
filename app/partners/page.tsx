@@ -4,10 +4,15 @@ import React from "react";
 
 export default function PartnersPage() {
   return (
-    <div>
-      <div className="h-[30vh]"></div>
-      <Partners />
-      <Footer />
-    </div>
+    <>
+      <div className="bg-gray-200 pt-60 ">
+        <div className="flex flex-col">
+          <Partners />
+          <div className="mt-60">
+            <Footer />
+          </div>
+        </div>
+      </div>
+    </>
   );
 }

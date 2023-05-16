@@ -22,7 +22,7 @@ function About({ abouttext, aboutimg, aboutalt }: any) {
           </div>
           <div className="flex flex-col items-center justify-center h-full flex-[0_1_50%]">
             <div className=" p-4 rounded-xl shadow-xl shadow-gray-400">
-              <p className="text-2xl md:text-4xl text-gray-600 text-center tracking-wider uppercase ">
+              <p className="text-2xl md:text-3xl lg:text-4xl text-gray-600 text-center tracking-wider uppercase ">
                 {abouttext}
               </p>
             </div>

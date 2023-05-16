@@ -1,6 +1,6 @@
 import Image from "next/image";
 import FooterLogo from "../public/footerlogo2.png";
-import { SiFacebook, SiInstagram } from "react-icons/si";
+import { SiFacebook, SiInstagram, SiTiktok } from "react-icons/si";
 import { AiFillMail, AiFillPhone } from "react-icons/ai";
 
 import Link from "next/link";
@@ -14,16 +14,16 @@ function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-between pt-4 m-4 space-y-4 md:space-y-0">
           <div className="flex flex-col items-center justify-center p-4 rounded-xl bg-[#77c1e5] w-full md:m-none md:w-[30%] h-full">
             <span className="text-md md:text-lg lg:text-xl uppercase">
-              Hours:
+              Hours
             </span>
             <ul className="text-sm md:text-md lg:text-lg">
-              <li>Monday 6am to 2pm</li>
+              <li>Monday 7am to 2pm</li>
               <li>Tuesday Closed</li>
               <li>Wednesday Closed</li>
-              <li>Thursday 6am to 2pm</li>
-              <li>Friday 6am to 2pm</li>
-              <li>Saturday 6am to 2pm</li>
-              <li>Sunday 6am to 2pm</li>
+              <li>Thursday 7am to 2pm</li>
+              <li>Friday 7am to 2pm</li>
+              <li>Saturday 8am to 2pm</li>
+              <li>Sunday 8am to 2pm</li>
             </ul>
           </div>
 
@@ -39,6 +39,9 @@ function Footer() {
 
               <Link href="https://www.instagram.com/bagelboyfoley">
                 <SiInstagram className="text-xl" />
+              </Link>
+              <Link href="https://www.tiktok.com/@bagelboyfoley">
+                <SiTiktok className="text-xl" />
               </Link>
             </div>
 
@@ -60,7 +63,7 @@ function Footer() {
               <div className="flex items-center justify-center space-y-1">
                 <AiFillPhone />
                 <Link href="tel:251-555-5555">
-                  <span className=" text-sm lg:text-lg">- 251-555-5555</span>
+                  <span className=" text-sm lg:text-lg">205-275-5502</span>
                 </Link>
               </div>
             </div>
